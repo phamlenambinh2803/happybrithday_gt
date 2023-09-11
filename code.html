@@ -1,275 +1,318 @@
-<html><head>
-    <title>I LOVE YOU</title>
-    <meta name="Generator" content="EditPlus">
-    <meta name="Author" content="">
-    <meta name="Keywords" content="">  
-    <!-- <meta name="Description" content="" /> -->
-    <link rel="stylesheet" href="./main.css">
-  </head>
-
-  <body>
-    <div class="sp-container">
-      <div class="sp-content">
-        <div class="sp-globe"></div>
-        <h2 class="frame-1">P1</h2>
-        <h2 class="frame-2">P2</h2>
-        <h2 class="frame-3">P3</h2>
-        <h2 class="frame-4">P4</h2>
-        <h2 class="frame-5">
-          <span>P5</span>
-          <span>P6</span>
-          <span>P7</span>
-        </h2>
-      </div>
-    </div>
-
-    <canvas id="pinkboard" width="200" height="625">
-      <canvas id="pinkboard"> </canvas>
-    </canvas>
+<html __fvdsurfcanyoninserted="1" class=" clickberry-extension clickberry-extension-standalone clickberry-extension clickberry-extension-standalone clickberry-extension clickberry-extension-standalone"><head>
+    <meta charset="UTF-8">
+    <title>Happy Birthday</title>
+    <style>
+        /* If you can't see it just hit space in here*/
+        body {
+            font-family:'Wendy One', sans-serif;
+        }
+        
+        body {
+background-image: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 100, color-stop(0%, #374566), color-stop(100%, #010203));
+background-image: -webkit-radial-gradient(#374566, #010203);
+background-image: -moz-radial-gradient(#374566, #010203);
+background-image: -o-radial-gradient(#374566, #010203);
+background-image: radial-gradient(#374566, #010203);
+}
+        span {
+            text-transform: uppercase;
+        }
+        .container {
+            width: 800px;
+            height: 420px;
+            padding: 10px;
+            margin: 0 auto;
+            position: relative;
+        }
+        .balloon {
+            width: 738px;
+            margin: 0 auto;
+            padding-top: 30px;
+            position: relative;
+        }
+        .balloon > div {
+            width: 104px;
+            height: 140px;
+            background: rgba(182, 15, 97, 0.9);
+            border-radius: 0;
+            border-radius: 80% 80% 80% 80%;
+            margin: 0 auto;
+            position: absolute;
+            padding: 10px;
+            box-shadow: inset 17px 7px 10px rgba(182, 15, 97, 0.9);
+            -webkit-transform-origin: bottom center;
+        }
+        .balloon > div:nth-child(1) {
+            background: rgba(182, 15, 97, 0.9);
+            left: 0;
+            box-shadow: inset 10px 10px 10px rgba(135, 11, 72, 0.9);
+            -webkit-animation: balloon1 6s ease-in-out infinite;
+            -moz-animation: balloon1 6s ease-in-out infinite;
+            -o-animation: balloon1 6s ease-in-out infinite;
+            animation: balloon1 6s ease-in-out infinite;
+        }
+        .balloon > div:nth-child(1):before {
+            color: rgba(182, 15, 97, 0.9);
+        }
+        .balloon > div:nth-child(2) {
+            background: rgba(242, 112, 45, 0.9);
+            left: 120px;
+            box-shadow: inset 10px 10px 10px rgba(222, 85, 14, 0.9);
+            -webkit-animation: balloon2 6s ease-in-out infinite;
+            -moz-animation: balloon2 6s ease-in-out infinite;
+            -o-animation: balloon2 6s ease-in-out infinite;
+            animation: balloon2 6s ease-in-out infinite;
+        }
+        .balloon > div:nth-child(2):before {
+            color: rgba(242, 112, 45, 0.9);
+        }
+        .balloon > div:nth-child(3) {
+            background: rgba(45, 181, 167, 0.9);
+            left: 240px;
+            box-shadow: inset 10px 10px 10px rgba(35, 140, 129, 0.9);
+            -webkit-animation: balloon4 6s ease-in-out infinite;
+            -moz-animation: balloon4 6s ease-in-out infinite;
+            -o-animation: balloon4 6s ease-in-out infinite;
+            animation: balloon4 6s ease-in-out infinite;
+        }
+        .balloon > div:nth-child(3):before {
+            color: rgba(45, 181, 167, 0.9);
+        }
+        .balloon > div:nth-child(4) {
+            background: rgba(190, 61, 244, 0.9);
+            left: 360px;
+            box-shadow: inset 10px 10px 10px rgba(173, 14, 240, 0.9);
+            -webkit-animation: balloon1 5s ease-in-out infinite;
+            -moz-animation: balloon1 5s ease-in-out infinite;
+            -o-animation: balloon1 5s ease-in-out infinite;
+            animation: balloon1 5s ease-in-out infinite;
+        }
+        .balloon > div:nth-child(4):before {
+            color: rgba(190, 61, 244, 0.9);
+        }
+        .balloon > div:nth-child(5) {
+            background: rgba(180, 224, 67, 0.9);
+            left: 480px;
+            box-shadow: inset 10px 10px 10px rgba(158, 206, 34, 0.9);
+            -webkit-animation: balloon3 5s ease-in-out infinite;
+            -moz-animation: balloon3 5s ease-in-out infinite;
+            -o-animation: balloon3 5s ease-in-out infinite;
+            animation: balloon3 5s ease-in-out infinite;
+        }
+        .balloon > div:nth-child(5):before {
+            color: rgba(180, 224, 67, 0.9);
+        }
+        .balloon > div:nth-child(6) {
+            background: rgba(242, 194, 58, 0.9);
+            left: 600px;
+            box-shadow: inset 10px 10px 10px rgba(234, 177, 15, 0.9);
+            -webkit-animation: balloon2 3s ease-in-out infinite;
+            -moz-animation: balloon2 3s ease-in-out infinite;
+            -o-animation: balloon2 3s ease-in-out infinite;
+            animation: balloon2 3s ease-in-out infinite;
+        }
+        .balloon > div:nth-child(6):before {
+            color: rgba(242, 194, 58, 0.9);
+        }
+        .balloon > div:before {
+            color: rgba(182, 15, 97, 0.9);
+            position: absolute;
+            bottom: -11px;
+            left: 52px;
+            content:"▲";
+            font-size: 1em;
+        }
+        span {
+            font-size: 4.8em;
+            color: white;
+            position: relative;
+            top: 30px;
+            left: 50%;
+            margin-left: -27px;
+        }
+        /*BALLOON 1 4*/
+        @-webkit-keyframes balloon1 {
+            0%, 100% {
+                -webkit-transform: translateY(0) rotate(-6deg);
+            }
+            50% {
+                -webkit-transform: translateY(-20px) rotate(8deg);
+            }
+        }
+        @-moz-keyframes balloon1 {
+            0%, 100% {
+                -moz-transform: translateY(0) rotate(-6deg);
+            }
+            50% {
+                -moz-transform: translateY(-20px) rotate(8deg);
+            }
+        }
+        @-o-keyframes balloon1 {
+            0%, 100% {
+                -o-transform: translateY(0) rotate(-6deg);
+            }
+            50% {
+                -o-transform: translateY(-20px) rotate(8deg);
+            }
+        }
+        @keyframes balloon1 {
+            0%, 100% {
+                transform: translateY(0) rotate(-6deg);
+            }
+            50% {
+                transform: translateY(-20px) rotate(8deg);
+            }
+        }
+        /* BAllOON 2 5*/
+        @-webkit-keyframes balloon2 {
+            0%, 100% {
+                -webkit-transform: translateY(0) rotate(6eg);
+            }
+            50% {
+                -webkit-transform: translateY(-30px) rotate(-8deg);
+            }
+        }
+        @-moz-keyframes balloon2 {
+            0%, 100% {
+                -moz-transform: translateY(0) rotate(6deg);
+            }
+            50% {
+                -moz-transform: translateY(-30px) rotate(-8deg);
+            }
+        }
+        @-o-keyframes balloon2 {
+            0%, 100% {
+                -o-transform: translateY(0) rotate(6deg);
+            }
+            50% {
+                -o-transform: translateY(-30px) rotate(-8deg);
+            }
+        }
+        @keyframes balloon2 {
+            0%, 100% {
+                transform: translateY(0) rotate(6deg);
+            }
+            50% {
+                transform: translateY(-30px) rotate(-8deg);
+            }
+        }
+        /* BAllOON 0*/
+        @-webkit-keyframes balloon3 {
+            0%, 100% {
+                -webkit-transform: translate(0, -10px) rotate(6eg);
+            }
+            50% {
+                -webkit-transform: translate(-20px, 30px) rotate(-8deg);
+            }
+        }
+        @-moz-keyframes balloon3 {
+            0%, 100% {
+                -moz-transform: translate(0, -10px) rotate(6eg);
+            }
+            50% {
+                -moz-transform: translate(-20px, 30px) rotate(-8deg);
+            }
+        }
+        @-o-keyframes balloon3 {
+            0%, 100% {
+                -o-transform: translate(0, -10px) rotate(6eg);
+            }
+            50% {
+                -o-transform: translate(-20px, 30px) rotate(-8deg);
+            }
+        }
+        @keyframes balloon3 {
+            0%, 100% {
+                transform: translate(0, -10px) rotate(6eg);
+            }
+            50% {
+                transform: translate(-20px, 30px) rotate(-8deg);
+            }
+        }
+        /* BAllOON 3*/
+        @-webkit-keyframes balloon4 {
+            0%, 100% {
+                -webkit-transform: translate(10px, -10px) rotate(-8eg);
+            }
+            50% {
+                -webkit-transform: translate(-15px, 20px) rotate(10deg);
+            }
+        }
+        @-moz-keyframes balloon4 {
+            0%, 100% {
+                -moz-transform: translate(10px, -10px) rotate(-8eg);
+            }
+            50% {
+                -moz-transform: translate(-15px, 10px) rotate(10deg);
+            }
+        }
+        @-o-keyframes balloon4 {
+            0%, 100% {
+                -o-transform: translate(10px, -10px) rotate(-8eg);
+            }
+            50% {
+                -o-transform: translate(-15px, 10px) rotate(10deg);
+            }
+        }
+        @keyframes balloon4 {
+            0%, 100% {
+                transform: translate(10px, -10px) rotate(-8eg);
+            }
+            50% {
+                transform: translate(-15px, 10px) rotate(10deg);
+            }
+        }
+        h1 {
+            position: relative;
+            top: 200px;
+            text-align: center;
+            color: white;
+            font-size: 3.5em;
+        }
+    </style>
     <script>
-      /*
-       * code by plnb
-       */
-      var settings = {
-        particles: {
-          length: 2200, // maximum amount of particles
-          duration: 2, // particle duration in sec
-          velocity: 120, // particle velocity in pixels/sec
-          effect: -1.2, // play with this for a nice effect
-          size: 14, // particle size in pixels
-        },
-      };
-
-      (function () {
-        var b = 0;
-        var c = ["ms", "moz", "webkit", "o"];
-        for (var a = 0; a < c.length && !window.requestAnimationFrame; ++a) {
-          window.requestAnimationFrame = window[c[a] + "RequestAnimationFrame"];
-          window.cancelAnimationFrame = window[c[a] + "CancelAnimationFrame"] || window[c[a] + "CancelRequestAnimationFrame"];
+        window.open = function() {};
+        window.print = function() {};
+        // Support hover state for mobile.
+        if (false) {
+            window.ontouchstart = function() {};
         }
-        if (!window.requestAnimationFrame) {
-          window.requestAnimationFrame = function (h, e) {
-            var d = new Date().getTime();
-            var f = Math.max(0, 16 - (d - b));
-            var g = window.setTimeout(function () {
-              h(d + f);
-            }, f);
-            b = d + f;
-            return g;
-          };
-        }
-        if (!window.cancelAnimationFrame) {
-          window.cancelAnimationFrame = function (d) {
-            clearTimeout(d);
-          };
-        }
-      })();
-
-      /*
-       * Point class
-       */
-      var Point = (function () {
-        function Point(x, y) {
-          this.x = typeof x !== "undefined" ? x : 0;
-          this.y = typeof y !== "undefined" ? y : 0;
-        }
-        Point.prototype.clone = function () {
-          return new Point(this.x, this.y);
-        };
-        Point.prototype.length = function (length) {
-          if (typeof length == "undefined") return Math.sqrt(this.x * this.x + this.y * this.y);
-          this.normalize();
-          this.x *= length;
-          this.y *= length;
-          return this;
-        };
-        Point.prototype.normalize = function () {
-          var length = this.length();
-          this.x /= length;
-          this.y /= length;
-          return this;
-        };
-        return Point;
-      })();
-
-      /*
-       * Particle class
-       */
-      var Particle = (function () {
-        function Particle() {
-          this.position = new Point();
-          this.velocity = new Point();
-          this.acceleration = new Point();
-          this.age = 0;
-        }
-        Particle.prototype.initialize = function (x, y, dx, dy) {
-          this.position.x = x;
-          this.position.y = y;
-          this.velocity.x = dx;
-          this.velocity.y = dy;
-          this.acceleration.x = dx * settings.particles.effect;
-          this.acceleration.y = dy * settings.particles.effect;
-          this.age = 0;
-        };
-        Particle.prototype.update = function (deltaTime) {
-          this.position.x += this.velocity.x * deltaTime;
-          this.position.y += this.velocity.y * deltaTime;
-          this.velocity.x += this.acceleration.x * deltaTime;
-          this.velocity.y += this.acceleration.y * deltaTime;
-          this.age += deltaTime;
-        };
-        Particle.prototype.draw = function (context, image) {
-          function ease(t) {
-            return --t * t * t + 1;
-          }
-          var size = image.width * ease(this.age / settings.particles.duration);
-          context.globalAlpha = 1 - this.age / settings.particles.duration;
-          context.drawImage(image, this.position.x - size / 2, this.position.y - size / 2, size, size);
-        };
-        return Particle;
-      })();
-
-      /*
-       * ParticlePool class
-       */
-      var ParticlePool = (function () {
-        var particles,
-          firstActive = 0,
-          firstFree = 0,
-          duration = settings.particles.duration;
-
-        function ParticlePool(length) {
-          // create and populate particle pool
-          particles = new Array(length);
-          for (var i = 0; i < particles.length; i++) particles[i] = new Particle();
-        }
-        ParticlePool.prototype.add = function (x, y, dx, dy) {
-          particles[firstFree].initialize(x, y, dx, dy);
-
-          // handle circular queue
-          firstFree++;
-          if (firstFree == particles.length) firstFree = 0;
-          if (firstActive == firstFree) firstActive++;
-          if (firstActive == particles.length) firstActive = 0;
-        };
-        ParticlePool.prototype.update = function (deltaTime) {
-          var i;
-
-          // update active particles
-          if (firstActive < firstFree) {
-            for (i = firstActive; i < firstFree; i++) particles[i].update(deltaTime);
-          }
-          if (firstFree < firstActive) {
-            for (i = firstActive; i < particles.length; i++) particles[i].update(deltaTime);
-            for (i = 0; i < firstFree; i++) particles[i].update(deltaTime);
-          }
-
-          // remove inactive particles
-          while (particles[firstActive].age >= duration && firstActive != firstFree) {
-            firstActive++;
-            if (firstActive == particles.length) firstActive = 0;
-          }
-        };
-        ParticlePool.prototype.draw = function (context, image) {
-          // draw active particles
-          if (firstActive < firstFree) {
-            for (i = firstActive; i < firstFree; i++) particles[i].draw(context, image);
-          }
-          if (firstFree < firstActive) {
-            for (i = firstActive; i < particles.length; i++) particles[i].draw(context, image);
-            for (i = 0; i < firstFree; i++) particles[i].draw(context, image);
-          }
-        };
-        return ParticlePool;
-      })();
-
-      /*
-       * Putting it all together
-       */
-      (function (canvas) {
-        var context = canvas.getContext("2d"),
-          particles = new ParticlePool(settings.particles.length),
-          particleRate = settings.particles.length / settings.particles.duration, // particles/sec
-          time;
-
-        // get point on heart with -PI <= t <= PI
-        function pointOnHeart(t) {
-          return new Point(160 * Math.pow(Math.sin(t), 3), 130 * Math.cos(t) - 50 * Math.cos(2 * t) - 20 * Math.cos(3 * t) - 10 * Math.cos(4 * t) + 25);
-        }
-
-        // creating the particle image using a dummy canvas
-        var image = (function () {
-          var canvas = document.createElement("canvas"),
-            context = canvas.getContext("2d");
-          canvas.width = settings.particles.size;
-          canvas.height = settings.particles.size;
-          // helper function to create the path
-          function to(t) {
-            var point = pointOnHeart(t);
-            point.x = settings.particles.size / 3 + (point.x * settings.particles.size) / 550;
-            point.y = settings.particles.size / 3 - (point.y * settings.particles.size) / 550;
-            return point;
-          }
-          // create the path
-          context.beginPath();
-          var t = -Math.PI;
-          var point = to(t);
-          context.moveTo(point.x, point.y);
-          while (t < Math.PI) {
-            t += 0.01; // baby steps!
-            point = to(t);
-            context.lineTo(point.x, point.y);
-          }
-          context.closePath();
-          // create the fill
-          context.fillStyle = "red";
-          context.fill();
-          // create the image
-          var image = new Image();
-          image.src = canvas.toDataURL();
-          return image;
-        })();
-
-        // render that thing!
-        function render() {
-          // next animation frame
-          requestAnimationFrame(render);
-
-          // update time
-          var newTime = new Date().getTime() / 1000,
-            deltaTime = newTime - (time || newTime);
-          time = newTime;
-
-          // clear canvas
-          context.clearRect(0, 0, canvas.width, canvas.height);
-
-          // create new particles
-          var amount = particleRate * deltaTime;
-          for (var i = 0; i < amount; i++) {
-            var pos = pointOnHeart(Math.PI - 2 * Math.PI * Math.random());
-            var dir = pos.clone().length(settings.particles.velocity);
-            particles.add(canvas.width / 2 + pos.x, canvas.height / 2 - pos.y, dir.x, -dir.y);
-          }
-
-          // update and draw particles
-          particles.update(deltaTime);
-          particles.draw(context, image);
-        }
-
-        // handle (re-)sizing of the canvas
-        function onResize() {
-          canvas.width = canvas.clientWidth;
-          canvas.height = canvas.clientHeight;
-        }
-        window.onresize = onResize;
-
-        // delay rendering bootstrap
-        setTimeout(function () {
-          onResize();
-          render();
-        }, 10);
-      })(document.getElementById("pinkboard"));
     </script>
-  
+    <script type="text/javascript" src="chrome-extension://bfbmjmiodbnnpllbbbfblcplfjjepjdn/js/injected.js"></script>
+    <meta content="clickberry-extension-here">
+    <meta content="clickberry-extension-here">
+    <style type="text/css"></style>
+    <style type="text/css"></style>
+<style type="text/css"></style><style type="text/css"></style><script type="text/javascript" src="chrome-extension://bfbmjmiodbnnpllbbbfblcplfjjepjdn/js/injected.js"></script><meta content="clickberry-extension-here"></head>
+
+<body>
+    <link href="https://fonts.googleapis.com/css?family=Wendy+One" rel="stylesheet" type="text/css">
+    <div class="container">
+        <div class="balloon">
+            <div><span>☺</span>
+            </div>
+            <div><span>B</span>
+            </div>
+            <div><span>D</span>
+            </div>
+            <div><span>A</span>
+            </div>
+            <div><span>Y</span>
+            </div>
+            <div><span>!</span>
+            </div>
+        </div>
+         <h1>Gthuw</h1>
+
+    </div>
+    <script>
+        
+    </script>
+    <script>
+        if (document.location.search.match(/type=embed/gi)) {
+            window.parent.postMessage('resize', "*");
+        }
+    </script>
+
 
 </body></html>
